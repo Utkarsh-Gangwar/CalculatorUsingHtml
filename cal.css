@@ -1,7 +1,8 @@
 .cal{
     background-color: blue;
+    width: 500px;
 }
-.Body,.text{
+.main{
     padding: 10px;
     margin: 10px;
 }
