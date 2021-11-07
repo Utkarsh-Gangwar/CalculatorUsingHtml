@@ -1,7 +1,25 @@
-.operation{
-    float: right;
+.cal{
+    background-color: blue;
 }
-
-.body{
-    width: 100px;
+.Body,.text{
+    padding: 10px;
+    margin: 10px;
+}
+input{
+    font-size: 15px;
+    background-color: aliceblue;
+}
+.CalBody{
+    padding-top: 10px;
+    padding-left: 5px;
+}
+button{
+    width: 50px;
+    font-size: 15px;
+    color: aliceblue;
+    background-color: rgb(132, 104, 233);
+}
+button:hover{
+    background-color: aliceblue;
+    color: black;
 }
