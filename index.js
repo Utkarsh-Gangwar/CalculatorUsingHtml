@@ -50,16 +50,13 @@ function equal(){
     if(op=="/")
         text = text + "=" + (num1/num2);
     display.value=text;
-    ac();
+    ac(false);
 }
-function ac(){
+function ac(bul){
     text="";
     num1=0;
     num2=0;
     op=" ";
-}
-
-function clear(){
-    ac();
-    display.value="0";
+    if(bul)
+    display.value=text;
 }
