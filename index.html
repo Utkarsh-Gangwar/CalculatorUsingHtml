@@ -10,7 +10,7 @@
 <body>
     <div class="cal">
         <div class="text">
-            <input id="disp-box" type="number" placeholder="0" disabled />
+            <input id="disp-box" type="text" placeholder="0" disabled />
         </div>
 
         <div class="body">
@@ -18,25 +18,25 @@
                 <button onclick="data(7)" class="btn_number">7</button>
                 <button onclick="data(8)" class="btn_number">8</button>
                 <button onclick="data(9)" class="btn_number">9</button>
-                <button  class="sum">+</button>
+                <button onclick="opration_update('+')" class="sum">+</button>
             </div>
             <div class="CalBody">
                 <button onclick="data(4)" class="btn_number">4</button>
                 <button onclick="data(5)" class="btn_number">5</button>
                 <button onclick="data(6)" class="btn_number">6</button>
-                <button  class="minus">-</button>
+                <button onclick="opration_update('-')" class="minus">-</button>
             </div>
             <div class="CalBody">
                 <button onclick="data(1)" class="btn_number">1</button>
                 <button onclick="data(2)" class="btn_number">2</button>
                 <button onclick="data(3)" class="btn_number">3</button>
-                <button  class="multi">*</button>
+                <button onclick="opration_update('*')" class="multi">*</button>
             </div>
             <div class="CalBody" style="padding-bottom: 10px;">
                 <button onclick="data(0)" class="btn_number">0</button>
-                <button class="btn_number">.</button>
-                <button class="equal">=</button>
-                <button  class="divide">/</button>
+                <button onclick="clear()" class="btn_number">AC</button>
+                <button onclick="equal()" class="equal">=</button>
+                <button onclick="opration_update('/')" class="divide">/</button>
             </div>
         </div>
     </div>
