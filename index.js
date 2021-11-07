@@ -13,11 +13,53 @@ function data(num){
 }
 
 function text_update(){
-    // console.log(num1+op+"/");
     if(op == " "){
-        console.log(num1);
         text = num1;
     }
-    console.log(text);
-    display.innerHTML=text;
+    if(op == "+"){
+        text = num1 + op + num2;
+    }
+    if(op == "-"){
+        text = num1 + op + num2;
+    }
+    if(op == "*"){
+        text = num1 + op + num2;
+    }
+    if(op == "/"){
+        text = num1 + op + num2;
+    }
+    display.value=text;
+}
+
+function opration_update(temp) {
+    op=temp;
+    text = num1+op;
+    display.value=text;
+}
+
+function equal(){
+    if(op=="+")
+        text = text + "=" + (num1+num2);
+
+    if(op=="-")
+        text = text + "=" + (num1-num2);
+    
+    if(op=="*")
+        text = text + "=" + (num1*num2);
+    
+    if(op=="/")
+        text = text + "=" + (num1/num2);
+    display.value=text;
+    ac();
+}
+function ac(){
+    text="";
+    num1=0;
+    num2=0;
+    op=" ";
+}
+
+function clear(){
+    ac();
+    display.value="0";
 }
