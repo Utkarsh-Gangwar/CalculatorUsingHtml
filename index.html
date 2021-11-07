@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="./cal.css" />
 </head>
-
 <body>
     <div class="cal">
         <div class="text">
@@ -17,32 +15,31 @@
 
         <div class="body">
             <div class="CalBody">
-                <button data-number="7" id="btn_number">7</button>
-                <button data-number="8" id="btn_number">8</button>
-                <button data-number="9" id="btn_number">9</button>
-                <button id="sum">+</button>
+                <button onclick="data(7)" class="btn_number">7</button>
+                <button onclick="data(8)" class="btn_number">8</button>
+                <button onclick="data(9)" class="btn_number">9</button>
+                <button  class="sum">+</button>
             </div>
             <div class="CalBody">
-                <button data-number="4" id="btn_number">4</button>
-                <button data-number="5" id="btn_number">5</button>
-                <button data-number="6" id="btn_number">6</button>
-                <button id="minus">-</button>
+                <button onclick="data(4)" class="btn_number">4</button>
+                <button onclick="data(5)" class="btn_number">5</button>
+                <button onclick="data(6)" class="btn_number">6</button>
+                <button  class="minus">-</button>
             </div>
             <div class="CalBody">
-                <button data-number="1" id="btn_number">1</button>
-                <button data-number="2" id="btn_number">2</button>
-                <button data-number="3" id="btn_number">3</button>
-                <button id="multi">*</button>
+                <button onclick="data(1)" class="btn_number">1</button>
+                <button onclick="data(2)" class="btn_number">2</button>
+                <button onclick="data(3)" class="btn_number">3</button>
+                <button  class="multi">*</button>
             </div>
             <div class="CalBody" style="padding-bottom: 10px;">
-                <button data-number="0" id="btn_number">0</button>
-                <button id="btn_number">.</button>
-                <button id="equal">=</button>
-                <button id="divide">/</button>
+                <button onclick="data(0)" class="btn_number">0</button>
+                <button class="btn_number">.</button>
+                <button class="equal">=</button>
+                <button  class="divide">/</button>
             </div>
         </div>
     </div>
     <script src="index.js"></script>
 </body>
-
 </html>
