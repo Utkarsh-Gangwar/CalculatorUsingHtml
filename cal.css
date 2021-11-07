@@ -19,6 +19,7 @@ button{
     font-size: 15px;
     color: aliceblue;
     background-color: rgb(132, 104, 233);
+    transition: .8s;
 }
 button:hover{
     background-color: aliceblue;
