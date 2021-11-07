@@ -1,6 +1,6 @@
 .cal{
     background-color: blue;
-    width: 500px;
+    max-width: 500px;
 }
 .main{
     padding: 10px;
